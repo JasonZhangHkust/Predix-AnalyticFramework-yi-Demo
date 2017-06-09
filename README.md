@@ -61,7 +61,10 @@ In postman command, you can use the following request body to map data from Time
      "orchestrationConfigurationId": "orchestrationentryID",
      "assetId": null,
      "assetDataFieldsMap": {
-         "temperature sensor": "tag-C", map tag-C from timeseries service to temperature sensor, and the analytic template will map this to your code input
+         "temperature sensor": "tag-C", // map tag-C from timeseries service to temperature sensor, and the analytic template 
+         
+         
+         will map this to your code input
          "demo aggregation": "demo-aggregation1h"
      },
      "assetGroup": null
