@@ -39,7 +39,7 @@ scope please refer to [here](https://docs.predix.io/en-US/content/service/analyt
      }
  }
 ```
-5. After this you can upload your `analytic code` and an `analytic template` using the AnalyticUi following the [instruction](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-management)
+5. After this you can upload your `analytic code`or you can use my [zip](https://drive.google.com/open?id=0BzVnFHrCwrGHYVVBRkhhX2l4ZlU) and an `analytic template` using the AnalyticUi following the [instruction](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-management)
 
 `analytic tempalte` defines the input & output data format of your code.
 
