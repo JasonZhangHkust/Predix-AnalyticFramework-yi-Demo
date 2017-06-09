@@ -19,7 +19,7 @@ quickly guide you through some common issues.
 2. In your UAA service, you should configure a UI client, a Runtime client and a Analyticferamework client. The corresponding authority and
 scope please refer to [here](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/get-started)
 3. Subscribe the service in your Predix account and bind your UAA clients.
-4. After your subscription, you should update your service with your timeseriesZoneID(also assetZoneID if you need) using cf command with the following format. And also update your runtime client to have the access to yout timeseries or asset services.
+4. After your subscription, you should `update your service` with your timeseriesZoneID(also assetZoneID if you need) using cf command with the following format. And also `update your runtime client` to have the access to yout timeseries or asset services in UAA dashboard.
 ```javascript
 {
      "trustedIssuerIds":[
@@ -44,7 +44,7 @@ scope please refer to [here](https://docs.predix.io/en-US/content/service/analyt
 analytic tempalte defines the input & output data format of your code.
 
 
-6. Then upload the Orchestration file which defines how your analytic code will be excuted during the runtime.
+6. Then upload the `Orchestration file` which defines how your analytic code will be excuted during the runtime.
 7. Upload the port-to-field file which defines how to process the data from the binded TimeSeries service.
 8. Finally you can run the code using Postman.
 
@@ -52,7 +52,7 @@ analytic tempalte defines the input & output data format of your code.
 The 6-7 steps can be finished using [Postman collection](https://github.com/PredixDev/predix-analytics-sample/blob/master/orchestrations/oneStepOrchestration/SingleStepOrchestrationDemoUsingTagMap.postman_collection.json)
 
 
-In postman command, you can use the following request body to map data from TimeSeries to your Analytic code.
+In postman command, you can use the following request body to `map data from TimeSeries to your Analytic code`.
 
 
 ```javascript
