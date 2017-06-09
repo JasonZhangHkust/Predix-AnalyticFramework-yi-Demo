@@ -19,7 +19,7 @@ quickly guide you through some common issues.
 2. In your UAA service, you should configure a UI client, a Runtime client and a Analyticferamework client. The corresponding authority and
 scope please refer to [here](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/get-started)
 3. Subscribe the service in your Predix account and bind your UAA clients.
-4. After your subscription, you should `update your service` with your timeseriesZoneID(also assetZoneID if you need) using cf command with the following format. And also `update your runtime client` to have the access to yout timeseries or asset services in UAA dashboard.
+4. After your subscription, you should `update your analytic service` with your timeseriesZoneID(also assetZoneID if you need) using cf command with the following format. And also `update your runtime client` to have the access to your timeseries or asset services in UAA dashboard.
 ```javascript
 {
      "trustedIssuerIds":[
