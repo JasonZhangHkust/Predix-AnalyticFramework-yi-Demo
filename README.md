@@ -21,7 +21,7 @@ scope please refer to [here](https://docs.predix.io/en-US/content/service/analyt
 3. Subscribe the service in your Predix account and bind your UAA clients.
 4. After your subscription, you should update your service with your timeseriesZoneID(also assetZoneID if you need) using cf command with
 the following format.
-'''javascript
+```javascript
 {
      "trustedIssuerIds":[
          "UAA-URL"
@@ -39,7 +39,7 @@ the following format.
      "clientSecret" : "yourSchedulerClientSecret"
      }
  }
-'''
+```
 5. After this you can upload your analytic code and an analytic template using the AnalyticUi following the [instruction](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-management)
 
 analytic tempalte defines the input & output data format of your code.
@@ -56,7 +56,7 @@ The 6-7 steps can be finished using [Postman collection](https://github.com/Pred
 In postman command, you can use the following request body to map data from TimeSeries to your Analytic code.
 
 
-'''javascript
+```javascript
 {
      "orchestrationConfigurationId": "orchestrationentryID",
      "assetId": null,
@@ -66,4 +66,4 @@ In postman command, you can use the following request body to map data from Time
      },
      "assetGroup": null
  }
- '''
+```
