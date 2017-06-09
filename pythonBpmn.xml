@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="OrchestrationWithOneAnalytic" isExecutable="true">
+
+        <startEvent id="startEvent"
+                    name="">
+            <outgoing>start-to-demoTimeseriesAggregation</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1"
+                     id="demoTimeseriesAggregation"
+                     isForCompensation="false"
+                     name="9f28000e-9e48-4d56-9e33-1c8fa0be30ee::aggregate::v1"
+                     startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>start-to-demoTimeseriesAggregation</incoming>
+            <outgoing>demoTimeseriesAggregation-to-end</outgoing>
+        </serviceTask>
+
+        <endEvent id="endEvent" name="">
+            <incoming>demoTimeseriesAggregation-to-end</incoming>
+        </endEvent>
+
+
+        <sequenceFlow id="start-to-demoTimeseriesAggregation"
+                      name="" sourceRef="startEvent"
+                      targetRef="demoTimeseriesAggregation"/>
+
+        <sequenceFlow id="demoTimeseriesAggregation-to-end"
+                      name="" sourceRef="demoTimeseriesAggregation" targetRef="endEvent"/>
+
+    </process>
+
+</definitions>

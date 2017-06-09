@@ -1,0 +1,17 @@
+{
+     "trustedIssuerIds":[
+         "UAA-URL"
+     ],
+     "runtimeDependentServices":{
+         "predixTimeseriesZoneId": "yourTimeSeriesZoneID"
+     },
+     "uiDomainPrefix": "yourUiPrefix",
+     "uiTrustedClientCredentials":{     
+     "clientId": "yourUiClientID",
+     "clientSecret": "yourUiClientSecret"
+     },
+     "runtimeTrustedClientCredentials":{
+     "clientId": "yourSchedulerClient",
+     "clientSecret" : "yourSchedulerClientSecret"
+     }
+ }

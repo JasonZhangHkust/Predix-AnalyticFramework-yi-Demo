@@ -1,0 +1,34 @@
+{
+    "analyticName": "aggregate",
+    "analyticVersion": "v1",
+    "orchestrationStepId": "demoTimeseriesAggregation",
+    "iterations": [
+        {
+            "inputMaps": [
+                {
+                    "valueSourceType": "DATA_CONNECTOR",
+                    "fullyQualifiedPortName": "data.time_series.numberArray1",
+                    "fieldId": "temperature sensor",
+                    "queryCriteria": {
+                        "start": 1455733669601,
+                        "end": 1459333669610,
+						"tags": [{
+							"aggregations":[{
+								"type": "interpolate",
+								"interval": "1h"
+							}]
+						}]
+                    },
+                    "dataSourceId": "PredixTimeSeries"
+                }
+            ],
+            "outputMaps": [
+                {
+                    "fullyQualifiedPortName": "data.time_series.aggregation",
+                    "fieldId": "demo aggregation",
+                    "dataSourceId": "PredixTimeSeries"
+                }
+            ]
+        }
+    ]
+}

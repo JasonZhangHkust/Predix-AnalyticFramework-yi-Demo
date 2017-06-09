@@ -1,0 +1,10 @@
+{
+  "entry-method": "analytic.yiTimeSeries.aggregate",
+  "non-conda-libs": [
+    "boto"
+  ],
+  "conda-libs": [
+    "numpy",
+    "scipy"
+  ]
+}
