@@ -39,13 +39,13 @@ scope please refer to [here](https://docs.predix.io/en-US/content/service/analyt
      }
  }
 ```
-5. After this you can upload your analytic code and an analytic template using the AnalyticUi following the [instruction](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-management)
+5. After this you can upload your `analytic code` and an `analytic template` using the AnalyticUi following the [instruction](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-management)
 
-analytic tempalte defines the input & output data format of your code.
+`analytic tempalte` defines the input & output data format of your code.
 
 
 6. Then upload the `Orchestration file` which defines how your analytic code will be excuted during the runtime.
-7. Upload the port-to-field file which defines how to process the data from the binded TimeSeries service.
+7. Upload the `port-to-field` file which defines how to process the data from the binded TimeSeries service.
 8. Finally you can run the code using Postman.
 
 
