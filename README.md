@@ -8,7 +8,7 @@ Also this is a simple tutorial for the AnalyticFramework of GE Predix Platform.
 The official tutorial is not perfect due to the swtich from Analytic Catalog, Analytic Runtime, Analytic Ui to AnalyticFramework.
 
 
-The mixed tutorial has some out of date information about how to configure the AnalyticFramework.
+The mixed tutorial has some out of date information about how to configure the AnalyticFramework correctly.
 
 # Quick Setup
 Basically speaking, the Analyticframework is the combination of Analytic Catalog, Analytic Runtime, Analytic Ui. The following steps can
