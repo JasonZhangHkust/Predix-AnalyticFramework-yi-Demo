@@ -49,7 +49,7 @@ scope please refer to [here](https://docs.predix.io/en-US/content/service/analyt
 8. Finally you can run the code using Postman.
 
 
-The 6-7 steps can be finished using [Postman collection](https://github.com/PredixDev/predix-analytics-sample/blob/master/orchestrations/oneStepOrchestration/SingleStepOrchestrationDemoUsingTagMap.postman_collection.json)
+The 6-8 steps can be finished using [Postman collection](https://github.com/PredixDev/predix-analytics-sample/blob/master/orchestrations/oneStepOrchestration/SingleStepOrchestrationDemoUsingTagMap.postman_collection.json)
 
 
 In postman command, you can use the following request body to `map data from TimeSeries to your Analytic code`.
