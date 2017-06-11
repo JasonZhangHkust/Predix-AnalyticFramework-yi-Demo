@@ -11,12 +11,12 @@ The official tutorial is not perfect due to the swtich from Analytic Catalog, An
 The mixed tutorial has some out of date information about how to configure the AnalyticFramework correctly.
 
 # Quick Setup
-Basically speaking, the Analyticframework is the combination of Analytic Catalog, Analytic Runtime, Analytic Ui. The following steps can
+Basically speaking, the Analyticframework is the combination of Analytic Catalog, Analytic Runtime and Analytic Ui. The following steps can
 quickly guide you through some common issues.
 
 
 1. Set up your own UAA service, Timeserise service.
-2. In your UAA service, you should configure a UI client, a Runtime client and a Analyticferamework client. The corresponding authority and
+2. In your UAA service, you should configure a UI client, a Runtime client and a Analyticframework client. The corresponding authority and
 scope please refer to [here](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/get-started)
 3. Subscribe the service in your Predix account and bind your UAA clients.
 4. After your subscription, you should `update your analytic service` with your timeseriesZoneID(also assetZoneID if you need) using cf command with the following format. And also `update your runtime client` to have the access to your timeseries or asset services in UAA dashboard.
